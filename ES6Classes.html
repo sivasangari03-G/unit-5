@@ -17,16 +17,34 @@
             this.value = value;
         }
 
-        inc() {
-           return ++this.value
+        
+    }
+    class inc extends incrementAndDecrement {
+        constructor(value) {
+            super(value)
         }
-        dec() {
-           return --this.value
+        inc_() {
+            this.value = this.value + 1;
+            //console.log(this.value);
         }
     }
 
-    var p1 = new incrementAndDecrement(2)
-    console.log(p1.inc())
-    console.log(p1.dec());
+    class dec extends incrementAndDecrement {
+        constructor(value) {
+            super(value)
+        }
+        dec_() {
+            this.value = this.value - 1;
+            console.log(this.value);
+        }
+    }
+    var p1 = new inc(2)
+    var p2 = new dec(2)
+    p1.inc_()
+    p2.dec_()
+
+    console.log(p1);
+    console.log(p2);
+
     
 </script>
