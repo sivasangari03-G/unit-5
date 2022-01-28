@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    class incrementAndDecrement {
+        constructor(value) {
+            this.value = value;
+        }
+
+        inc() {
+           return ++this.value
+        }
+        dec() {
+           return --this.value
+        }
+    }
+
+    var p1 = new incrementAndDecrement(2)
+    console.log(p1.inc())
+    console.log(p1.dec());
+    
+</script>
